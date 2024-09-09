@@ -6,7 +6,6 @@ import { Button } from "@mui/material";
 import { TfiLayoutGrid4Alt } from "react-icons/tfi";
 import { CgMenuGridR } from "react-icons/cg";
 import { IoIosMenu } from "react-icons/io";
-import { HiViewGrid } from "react-icons/hi";
 import { FaAngleDown } from "react-icons/fa6";
 import ProductItem from "../../Components/ProductItem";
 import Pagination from '@mui/material/Pagination';

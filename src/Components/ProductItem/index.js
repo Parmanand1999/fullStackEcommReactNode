@@ -19,6 +19,7 @@ const ProductItem = ({ itemView }) => {
         <div className="imgWrapper">
           <img
             src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
+            alt=""
             className="w-100"
           />
 
@@ -48,7 +49,7 @@ const ProductItem = ({ itemView }) => {
           </div>
         </div>
       </div>
-      {isOpenProductModal == true && (
+      {isOpenProductModal === true && (
         <ProductModal closeProductModal={closeProductModal} />
       )}
     </>

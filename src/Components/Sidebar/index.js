@@ -6,7 +6,7 @@ import "react-range-slider-input/dist/style.css";
 import { Link } from "react-router-dom";
 const Sidebar = () => {
   const [value, setValue] = useState([100, 1000]);
-  const [value2, setValue2] = useState(0);
+  
 
   return (
     <>

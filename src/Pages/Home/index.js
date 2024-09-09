@@ -5,7 +5,7 @@ import banner2 from "../../assets/image/banner2.jpg";
 import banner3 from "../../assets/image/banner3.jpg";
 import banner4 from "../../assets/image/banner4.jpg";
 import coupon from "../../assets/image/coupon.webp";
-import { Button, Rating } from "@mui/material";
+import { Button} from "@mui/material";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import ProductItem from "../../Components/ProductItem";
 import HomeCat from "../../Components/HomeCat";

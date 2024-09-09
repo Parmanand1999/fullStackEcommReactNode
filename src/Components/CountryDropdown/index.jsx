@@ -20,7 +20,7 @@ const CountryDropdown = () => {
     context.setSelectedCountry(country);
   };
   useEffect(() => {
-    setCountryList(context.countryList);
+    setCountryList(context?.countryList);
   }, []);
   const filterList = (e) => {
     const keyword = e.target.value.toLowerCase().trim();
