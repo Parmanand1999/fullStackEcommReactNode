@@ -25,10 +25,10 @@ const CountryDropdown = () => {
   const filterList = (e) => {
     const keyword = e.target.value.toLowerCase().trim();
     if (keyword === "") {
-      setCountryList(context.countryList);  
+      setCountryList(context.countryList);
       return;
     }
-    
+
     const list = context.countryList.filter((item) => {
       return item.country.toLowerCase().includes(keyword);
     });

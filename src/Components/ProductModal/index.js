@@ -10,6 +10,7 @@ import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 
 import QuantityBox from "../QuantityBox";
 import { IoIosHeartEmpty } from "react-icons/io";
+import ProductZoom from "../ProductZoom";
 const ProductModal = ({ closeProductModal }) => {
   const zoomSliderBig = useRef();
   const zoomSlider = useRef();
@@ -68,79 +69,7 @@ const ProductModal = ({ closeProductModal }) => {
 
         <div className="row mt-2 productDetaileModal">
           <div className="col-md-5">
-            <div className="productZoom position-relative">
-            <div className="badge badge-primary">23%</div>
-              <Slider
-                {...setting2}
-                className="zoomSliderBig"
-                ref={zoomSliderBig}
-              >
-                <div className="item">
-                  <InnerImageZoom
-                    zoomType="hover"
-                    zoomScale={1}
-                    src={
-                      "https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-600x540.jpg"
-                    }
-                    className="w-100"
-                  />
-                </div>
-                <div className="item">
-                  <InnerImageZoom
-                    zoomType="hover"
-                    zoomScale={1}
-                    src={
-                      "https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image2-47-600x540.jpg"
-                    }
-                    className="w-100"
-                  />
-                </div>
-                <div className="item">
-                  <InnerImageZoom
-                    zoomType="hover"
-                    zoomScale={1}
-                    src={
-                      "https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image3-35-600x540.jpg"
-                    }
-                    className="w-100"
-                  />
-                </div>
-              </Slider>
-            </div>
-
-            <Slider {...settings} className="zoomSlider" ref={zoomSlider}>
-              <div className="item">
-                <img
-                  src={
-                    "https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-62-600x540.jpg"
-                  }
-                  alt=""
-                  className="w-100"
-                  onClick={() => Goto(0)}
-                />
-              </div>
-
-              <div className="item">
-                <img
-                  src={
-                    "https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image2-47-600x540.jpg"
-                  }
-                  alt=""
-                  className="w-100"
-                  onClick={() => Goto(1)}
-                />
-              </div>
-              <div className="item">
-                <img
-                  src={
-                    "https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image3-35-600x540.jpg"
-                  }
-                  alt=""
-                  className="w-100"
-                  onClick={() => Goto(2)}
-                />
-              </div>
-            </Slider>
+           <ProductZoom/>
           </div>
 
           <div className="col-md-7">
