@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 const HomeCat = () => {
-  const [itemBg, setItemBg] = useState([
+  const itemBg=[
     "#fffceb",
     "#ecfffec",
     "#feefea",
@@ -20,7 +20,7 @@ const HomeCat = () => {
     "#fff3ff",
     "#f2fce4",
     "#feefea",
-  ]);
+  ];
 
   return (
     <>

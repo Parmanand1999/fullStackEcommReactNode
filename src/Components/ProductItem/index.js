@@ -19,17 +19,19 @@ const ProductItem = ({ itemView }) => {
         <div className="imgWrapper">
           <img
             src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
+            alt="img"
             className="w-100"
           />
-        </div>
-        <span className="badge badge-primary">28%</span>
-        <div className="action">
-          <Button onClick={() => viwProductDetails(1)}>
-            <TfiFullscreen />
-          </Button>
-          <Button>
-            <IoMdHeartEmpty style={{ fontSize: "20px" }} />
-          </Button>
+
+          <span className="badge badge-primary">28%</span>
+          <div className="action">
+            <Button onClick={() => viwProductDetails(1)}>
+              <TfiFullscreen />
+            </Button>
+            <Button>
+              <IoMdHeartEmpty style={{ fontSize: "20px" }} />
+            </Button>
+          </div>
         </div>
         <div className="info">
           <h4>Werther’s Original Caramel Hard Candies</h4>
@@ -47,7 +49,7 @@ const ProductItem = ({ itemView }) => {
           </div>
         </div>
       </div>
-      {isOpenProductModal == true && (
+      {isOpenProductModal === true && (
         <ProductModal closeProductModal={closeProductModal} />
       )}
     </>
