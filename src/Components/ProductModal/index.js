@@ -10,8 +10,7 @@ import QuantityBox from "../QuantityBox";
 import { IoIosHeartEmpty } from "react-icons/io";
 import ProductZoom from "../ProductZoom";
 const ProductModal = ({ closeProductModal }) => {
-  const zoomSliderBig = useRef();
-  const zoomSlider = useRef();
+ 
 
   return (
     <>
