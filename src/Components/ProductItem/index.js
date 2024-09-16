@@ -19,7 +19,7 @@ const ProductItem = ({ itemView }) => {
         <div className="imgWrapper">
           <img
             src="https://klbtheme.com/bacola/wp-content/uploads/2021/04/product-image-3-346x310.jpg"
-            alt=""
+            alt="img"
             className="w-100"
           />
 
