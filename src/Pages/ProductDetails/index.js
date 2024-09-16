@@ -9,7 +9,7 @@ import RelatedProducts from "./RelatedProducts";
 const ProductDetails = () => {
   const [activeSize, setActiveSize] = useState(0);
   const [activeTabs, setActiveTabs] = useState(1);
-  const [inputValue, setInputValue] = useState(2);
+  
   const isActive = (id) => {
     setActiveSize(id);
   };
@@ -67,36 +67,36 @@ const ProductDetails = () => {
                 <span>Size/ weight:</span>
                 <ul className=" d-flex list list-inline mb-0 pl-4">
                   <li className="list-inline-items">
-                    <a
+                    <span
                       className={`tag ${activeSize === 0 ? "active" : ""}`}
                       onClick={() => isActive(0)}
                     >
                       50g
-                    </a>
+                    </span>
                   </li>
                   <li className="list-inline-items">
-                    <a
+                    <span
                       className={`tag ${activeSize === 1 ? "active" : ""}`}
                       onClick={() => isActive(1)}
                     >
                       100g
-                    </a>
+                    </span>
                   </li>
                   <li className="list-inline-items">
-                    <a
+                    <span
                       className={`tag ${activeSize === 2 ? "active" : ""}`}
                       onClick={() => isActive(2)}
                     >
                       200g
-                    </a>
+                    </span>
                   </li>
                   <li className="list-inline-items">
-                    <a
+                    <span
                       className={`tag ${activeSize === 3 ? "active" : ""}`}
                       onClick={() => isActive(3)}
                     >
                       300g
-                    </a>
+                    </span>
                   </li>
                 </ul>
               </div>
