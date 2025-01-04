@@ -4,8 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProductItem from "../../../Components/ProductItem";
-import { IoIosArrowRoundForward } from "react-icons/io";
-import { Button } from "@mui/material";
+
 
 
 const RelatedProducts = ({title}) => {

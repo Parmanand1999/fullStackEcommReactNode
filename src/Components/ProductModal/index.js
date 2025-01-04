@@ -1,42 +1,17 @@
-import React, { useRef } from "react";
+import React from "react";
 import Dialog from "@mui/material/Dialog";
 
 import Button from "@mui/material/Button";
 import { MdClose, MdOutlineCompareArrows } from "react-icons/md";
 import { Rating } from "@mui/material";
-import Slider from "react-slick";
-import InnerImageZoom from "react-inner-image-zoom";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.min.css";
 
 import QuantityBox from "../QuantityBox";
 import { IoIosHeartEmpty } from "react-icons/io";
 import ProductZoom from "../ProductZoom";
 const ProductModal = ({ closeProductModal }) => {
-  const zoomSliderBig = useRef();
-  const zoomSlider = useRef();
-  var setting2 = {
-    dots: false,
-    infinite: false,
-    speed: 700,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: false,
-    arrows: false,
-  };
-  var settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    fade: false,
-    arrows: true,
-  };
+ 
 
-  const Goto = (index) => {
-    zoomSlider.current.slickGoTo(index);
-    zoomSliderBig.current.slickGoTo(index);
-  };
   return (
     <>
       <Dialog

@@ -21,7 +21,7 @@ const CountryDropdown = () => {
   };
   useEffect(() => {
     setCountryList(context?.countryList);
-  }, []);
+  },[context.countryList]);
   const filterList = (e) => {
     const keyword = e.target.value.toLowerCase().trim();
     if (keyword === "") {
